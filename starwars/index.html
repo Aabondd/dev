@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Starwars</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center pt-5">
+        <a href="https://swapi.dev/"><p class="title">STAR WARS</p></a>
+      </header>
+
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-md-6 m-auto">
+            <h3 class="text-center mb-3"><img src="https://img.icons8.com/dusk/55/000000/find-user-male.png"/>   Find your favorite movie hero
+              
+            </h3>
+            <div class="form-group">
+              <input type="text" id="search" class="form-control form-control-lg" placeholder="Enter hero's nama...">
+            </div>
+            <div id="match-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="buttons" class="text-center mb-5">
+        <div id="tabs" class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
+          <label id="films-label" class="btn btn-lg btn-outline-light">
+            <input
+              type="radio"
+              name="options"
+              id="films"
+              autocomplete="off"
+            />Films
+          </label>
+          <label class="btn btn-lg btn-outline-light">
+            <input
+              type="radio"
+              name="options"
+              id="people"
+              autocomplete="off"
+            />People
+          </label>
+          <label class="btn btn-lg btn-outline-light">
+            <input
+              type="radio"
+              name="options"
+              id="planets"
+              autocomplete="off"
+            />Planets
+          </label>
+          <label class="btn btn-lg btn-outline-light">
+            <input
+              type="radio"
+              name="options"
+              id="species"
+              autocomplete="off"
+            />Species
+          </label>
+          <label class="btn btn-lg btn-outline-light">
+            <input
+              type="radio"
+              name="options"
+              id="starships"
+              autocomplete="off"
+            />Starships
+          </label>
+          <label class="btn btn-lg btn-outline-light">
+            <input
+              type="radio"
+              name="options"
+              id="vehicles"
+              autocomplete="off"
+            />Vehicles
+          </label>
+        </div>
+
+        <!-- <button type="button" class="btn btn-sm btn-outline-light">
+          Sort A-Z
+        </button>
+      </div> -->
+      <div class="mx-auto sort-results" id="sort">
+      </div>
+
+      <div class="card-columns" id="results"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

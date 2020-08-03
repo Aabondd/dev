@@ -1,0 +1,31 @@
+body {
+  background: url(../img/background.jpg) no-repeat center/cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.title {
+  font-family: "Monoton", cursive;
+  font-size: 60px;
+  color: yellow;
+}
+
+.text-center a {
+  text-decoration: none;
+}
+
+.card {
+  border: 0px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.sort-results {
+  margin-top: 20px;
+}
+
+h3 {
+  color: white;
+}
